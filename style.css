@@ -9,7 +9,7 @@ table {
 }
 #screen{
     text-align: right;
-    background-color: cadetblue;
+    background-color: rgb(161, 165, 165);
     height: 3em;
     width: 100%;
     color: white;
