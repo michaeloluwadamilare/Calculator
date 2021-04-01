@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <head>
+        <title>Calulator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form name="calc" class="myForm">
+            <table>
+                <tr>
+                    <td colspan = '4'> <input type="text" id="screen" name="screen" disabled></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="C" id="cancel" onclick="calc.screen.value = ''"></td>
+                    <td><input type="button" value="DEL" id="delete" onclick="calc.screen.value = screen.value.substr(0,screen.value.length - 1)"></td>
+                    <td><input type="button" value="%" id="percentage" onclick="calc.screen.value +='/100'"></td>
+                    <td><input type="button" value="/" id="division" onclick="calc.screen.value +='/'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" id="num7" onclick="calc.screen.value +='7'"></td>
+                    <td><input type="button" value="8" id="num8" onclick="calc.screen.value +='8' "></td>
+                    <td><input type="button" value="9" id="num9" onclick="calc.screen.value +='9'"></td>
+                    <td><input type="button" value="x" id="multiply" onclick="calc.screen.value +='*'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" id="num4" onclick="calc.screen.value +='4'"></td>
+                    <td><input type="button" value="5" id="num5" onclick="calc.screen.value +='5'"></td>
+                    <td><input type="button" value="6" id="num6" onclick="calc.screen.value +='6'"></td>
+                    <td><input type="button" value="-" id="minus" onclick="calc.screen.value +='-'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="1" id="num1" onclick="calc.screen.value +='1'"></td>
+                    <td><input type="button" value="2" id="num2" onclick="calc.screen.value +='2'"></td>
+                    <td><input type="button" value="3" id="num3" onclick="calc.screen.value +='3'"></td>
+                    <td><input type="button" value="+" id="addition" onclick="calc.screen.value +='+'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="." id="decimalPoint" onclick="calc.screen.value +='.'"></input></td>
+                    <td><input type="button" value="0" id="num0" onclick="calc.screen.value +='0'"></td>
+                    <td colspan = '2'><input type="button"  value="=" id="equalTo" onclick="calc.screen.value=eval(calc.screen.value)"></td>
+                </tr>
+
+            </table>
+        </form>
+    </body>
+</html>
