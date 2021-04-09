@@ -6,13 +6,13 @@
     </head>
     <body>
         <form>
-        <table>
+        <table class="myTable">
             <tr>
                 <td colspan = '4'> <input type="text" id="screen" name="screen" disabled></td>
             </tr>
             <tr>
                 <td><input type="button" value="C" onclick="clr()"></td>
-                <td><input type="button" value="DEL" onclick="screen.value = screen.value.substr(0,screen.value.length - 1)"></td>
+                <td><input type="button" value="DEL" onclick="del()"></td>
                 <td><input type="button" value="%" onclick="valueInput('/100')"></td>
                 <td><input type="button" value="/" onclick="valueInput('/')"></td>
             </tr>

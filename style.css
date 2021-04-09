@@ -1,7 +1,7 @@
 table {
     margin: 0 auto;
     width: 25%;
-    height: 25em;
+    min-height:  25em;
     margin-top: 5em;
     text-align: center;
     padding: 10px;
@@ -24,4 +24,9 @@ input{
 input:hover{
     background-color: crimson;
     color: white;
+}
+@media only screen and (max-width: 768px) {
+    [class*="myTable"]{
+        width: 100%;
+    }
 }

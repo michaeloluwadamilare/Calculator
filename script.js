@@ -9,3 +9,8 @@ function calculate (){
 function clr(){
    document.getElementById('screen').value = "";
 }
+function del(){
+    let display = document.getElementById('screen').value;
+    display = display.substr(0,display.length - 1);
+    document.getElementById('screen').value = display;
+}
